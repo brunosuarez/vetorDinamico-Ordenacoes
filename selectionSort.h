@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int sellectionSort(int *vet, int n){
+int selectionSort(int *vet, int n){
 	int i, j, PosMenor, aux;
 	for(i = 0; i <n-1; i++){
 		PosMenor = i;
@@ -18,6 +18,6 @@ int sellectionSort(int *vet, int n){
     	}
 	}
 	for(i = 0; i < n; i++){
-		printf("Valor ordenado: %d\n", vet[i]);
+		printf("Vetor Ordenado: %d\n", vet[i]);
 	}
 }

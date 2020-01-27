@@ -21,6 +21,6 @@ int shellSort(int *vet,int n){
     i = i / 2;
   }
   for(i = 0; i < n; i++){
-		printf("Valor ordenado: %d\n", vet[i]);
+		printf("Vetor Ordenado: %d\n", vet[i]);
 	}
 }
