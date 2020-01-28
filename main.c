@@ -1,14 +1,13 @@
 #include<stdio.h>
 #include<stdlib.h>
-/*
-#include<insertionSort.h>
-#include<shellSort.h>
-#include<bubbleSort.h>
-#include<selectionSort.h>
-#include<bucketSort.h>
-#include<coutingSort.h>
-#include<radixSort.h>
-*/
+
+#include"insertionSort.h"
+#include"shellSort.h"
+#include"bubbleSort.h"
+#include"selectionSort.h"
+#include"bucketSort.h"
+#include"coutingSort.h"
+#include"radixSort.h"
 
 void main(){
 
@@ -43,53 +42,46 @@ void main(){
     printf("6 - Couting Sort: \n");
     printf("7 - Radix Sort: \n");
 
+    /*void imprimeVetor(int **vet[]){
+        for(int i = 0 ; i <sizeVet; i++) {
+        printf (" \n ");
+        printf (" Vetor: % i \n" , vet[i]);
+    }*/
 
     int opt;
-    int n;
+    int n, size;
     switch (opt){
         case 1:
         insertionSort(vet, n);
-        imprimeVetor(vet);
         break;
 
         case 2:
         shellSort(vet, n);
-        imprimeVetor(vet);
         break;
 
         case 3:
-        bubbleSort(vet, n);
-        imprimeVetor(vet);
+        bubbleSort(*vet, n);
         break;
 
         case 4:
         selectionSort(vet, n);
-        imprimeVetor(vet);
         break;
 
         case 5:
         bucketSort(vet[i],n);
-        imprimeVetor(vet);
         break;
 
         case 6:
         coutingSort(vet, n);
-        imprimeVetor(vet);
         break;
 
         case 7:
-        radixSort(vet, n);
-        imprimeVetor(vet);
+        radixSort(vet,size);
         break;
     
     default:
         printf("Valor inválido, digite algo entre 1 e 7");
     }
-
-    void imprimeVetor(int *vet[]){
-        for(int i = 0 ; i <sizeVet; i++) {
-        printf (" \n ");
-        printf (" Vetor: % i \n" , vet[i]);
-    };
+    
     
 }

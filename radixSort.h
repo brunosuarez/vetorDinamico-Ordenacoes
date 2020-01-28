@@ -37,14 +37,13 @@ void radixsort(int vet[], int size){
 }
 void printvet(int vet[], int size){
   for (int i = 0; i < size; ++i){
-    printf("%d  ", vet[i]);
+    printf("%d", vet[i]);
   }
   printf("\n");
 }
-
+/*
 int main(){
   int vet[] = {121, 432, 564, 23, 1, 45, 788};
   int n = sizeof(vet) / sizeof(vet[0]);
   radixsort(vet, n);
-  printvet(vet, n);
-}
+  printvet(vet, n);*/

@@ -25,12 +25,11 @@ void countSort(char vet[]) {
         vet[i] = output[i]; 
     } 
 }
-  
+/*  
 int main() { 
     char vet[] = "geeksforgeeks";
   
     countSort(vet); 
   
     printf("Sorted character array is %sn", vet); 
-    return 0; 
-} 
+    return 0; */

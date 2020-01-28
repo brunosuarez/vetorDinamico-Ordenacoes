@@ -48,7 +48,7 @@ void bucketSort(int vet[],int n){
         free(buckets[i].value);
     }
 }
-
+/*
 int main(char *arg[]) {
  
     int vet[100] = { 5, -34, 10, 1, -42, 123, 2, 395, 5, 4, 1234, 7 };
@@ -66,5 +66,4 @@ int main(char *arg[]) {
         printf("%d ", vet[k]);   
  
  
-    return 0;
-}
+    return 0;*/
