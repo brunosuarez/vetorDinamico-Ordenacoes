@@ -20,7 +20,4 @@ int shellSort(int *vet,int n){
     	}while (index == 0);
     i = i / 2;
   }
-  for(i = 0; i < n; i++){
-		printf("Vetor Ordenado: %d\n", vet[i]);
-	}
 }

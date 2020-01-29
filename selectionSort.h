@@ -17,7 +17,4 @@ int selectionSort(int *vet, int n){
 
     	}
 	}
-	for(i = 0; i < n; i++){
-		printf("Vetor Ordenado: %d\n", vet[i]);
-	}
 }

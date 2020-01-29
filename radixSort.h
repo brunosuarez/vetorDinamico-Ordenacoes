@@ -30,7 +30,7 @@ void countingSort(int vet[], int size, int place){
   for (int i = 0; i < size; i++)
     vet[i] = output[i];
 }
-void radixsort(int vet[], int size){
+void radixSort(int vet[], int size){
   int max = getMax(vet, size);
   for (int place = 1; max / place > 0; place *= 10)
     countingSort(vet, size, place);
@@ -41,9 +41,4 @@ void printvet(int vet[], int size){
   }
   printf("\n");
 }
-/*
-int main(){
-  int vet[] = {121, 432, 564, 23, 1, 45, 788};
-  int n = sizeof(vet) / sizeof(vet[0]);
-  radixsort(vet, n);
-  printvet(vet, n);*/
+
